@@ -1,0 +1,27 @@
+{
+  "name": "koacomposetest",
+  "version": "1.0.0",
+  "description": "浅记koa的洋葱模型实现，及项目实践",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niexq/koaComposeTest.git"
+  },
+  "keywords": [
+    "koa",
+    "compose"
+  ],
+  "author": "niexq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niexq/koaComposeTest/issues"
+  },
+  "homepage": "https://github.com/niexq/koaComposeTest#readme",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "koa2": "^2.0.0-alpha.7"
+  }
+}
