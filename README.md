@@ -1,10 +1,6 @@
 # koaComposeTest
 浅记[koa](https://github.com/koajs)的洋葱模型实现
 
-#### 本篇相关github代码地址
-
-github地址：https://github.com/niexq/koaComposeTest
-
 #### 1.简介
 Koa 是一个新的 web 框架，由 Express 幕后的原班人马打造， 致力于成为 web 应用和 API 开发领域中的一个更小、更富有表现力、更健壮的基石。 通过利用 async 函数，Koa 帮你丢弃回调函数，并有力地增强错误处理。 Koa 并没有捆绑任何中间件， 而是提供了一套优雅的方法，帮助您快速而愉快地编写服务端应用程序。
 
@@ -20,7 +16,7 @@ node my-koa-app.js
 ~~~
 
 #### 3.中间件执行的洋葱模型
-![洋葱模型](https://note.youdao.com/yws/res/3545/WEBRESOURCE54958a8b7a9ce07e8f90e13549b5563b)
+![](https://raw.githubusercontent.com/niexq/picbed/main/picgo/ycmx.png)
 
 #### 4.中间件级联
 Koa 中间件以更传统的方式级联。对比 Connect 的实现，通过一系列功能直接传递控制，直到一个返回，Koa 调用“下游”，然后控制流回“上游”。
@@ -210,6 +206,5 @@ compose方法中，递归调用dispatch函数，它将遍历整个middleware，�
 - context如何传递（context就在Promise.resolve(fn(context, dispatch.bind(null, i + 1)))一直传递）
 
 #### 9.结合洋葱模型，koa中间件执行效果
-![中间件执行效果图](https://note.youdao.com/yws/res/3745/WEBRESOURCE753bf914b57e317bc2d8a7ffd4557567)
-
+![](https://raw.githubusercontent.com/niexq/picbed/main/picgo/koauseus.png)
 
